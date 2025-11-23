@@ -2,7 +2,7 @@ package xyz.nothing.solidexample.models
 
 
 interface IShape {
-    fun getName(): String = ""
+    fun getName(): String = this.javaClass.simpleName
 }
 interface I2DShape : IShape{
     fun area(): Double
